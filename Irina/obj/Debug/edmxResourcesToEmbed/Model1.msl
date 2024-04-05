@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище BalkiaModelContainer" CdmEntityContainer="BalkiaEntities1">
+    <EntitySetMapping Name="Participants">
+      <EntityTypeMapping TypeName="BalkiaModel.Participants">
+        <MappingFragment StoreEntitySet="Participants">
+          <ScalarProperty Name="ParticipantsID" ColumnName="ParticipantsID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="MonthlyRent" ColumnName="MonthlyRent" />
+          <ScalarProperty Name="LegalEntity" ColumnName="LegalEntity" />
+          <ScalarProperty Name="IndividualEntrepreneur" ColumnName="IndividualEntrepreneur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Project">
+      <EntityTypeMapping TypeName="BalkiaModel.Project">
+        <MappingFragment StoreEntitySet="Project">
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="ProjectDescription" ColumnName="ProjectDescription" />
+          <ScalarProperty Name="ProjectStatus" ColumnName="ProjectStatus" />
+          <ScalarProperty Name="ProjectBudget" ColumnName="ProjectBudget" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectsTeams">
+      <EntityTypeMapping TypeName="BalkiaModel.ProjectsTeams">
+        <MappingFragment StoreEntitySet="ProjectsTeams">
+          <ScalarProperty Name="TeamID" ColumnName="TeamID" />
+          <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+          <ScalarProperty Name="TeamMembers" ColumnName="TeamMembers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Time">
+      <EntityTypeMapping TypeName="BalkiaModel.Time">
+        <MappingFragment StoreEntitySet="Time">
+          <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="BalkiaModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

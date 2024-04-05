@@ -1,0 +1,45 @@
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\bin\Debug\Irina.exe.config
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\bin\Debug\Irina.exe
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\bin\Debug\Irina.pdb
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\bin\Debug\EntityFramework.dll
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\bin\Debug\EntityFramework.xml
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Balkia.csproj.AssemblyReference.cache
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Balkia.csproj.SuggestedBindingRedirects.cache
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Irina.Budgets.resources
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Irina.Login.resources
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Irina.Menu.resources
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Irina.Participants.resources
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Irina.Projects.resources
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Irina.ProjectsTeams1.resources
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Irina.Properties.Resources.resources
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Irina.Reg.resources
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Balkia.csproj.GenerateResource.cache
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Balkia.csproj.CoreCompileInputs.cache
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Balkia.csproj.CopyComplete
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Irina.exe
+C:\Users\bolsh\OneDrive\Рабочий стол\Балкия\Irina\obj\Debug\Irina.pdb
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Balkia.csproj.AssemblyReference.cache
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Irina.Budgets.resources
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Irina.Login.resources
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Irina.Menu.resources
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Irina.Projects.resources
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Irina.ProjectsTeams1.resources
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Irina.Properties.Resources.resources
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Irina.Reg.resources
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Balkia.csproj.GenerateResource.cache
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Balkia.csproj.CoreCompileInputs.cache
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Irina.exe
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Irina.pdb
+C:\Users\Nelli\Desktop\Балкия\Irina\bin\Debug\Irina.exe.config
+C:\Users\Nelli\Desktop\Балкия\Irina\bin\Debug\Irina.exe
+C:\Users\Nelli\Desktop\Балкия\Irina\bin\Debug\Irina.pdb
+C:\Users\Nelli\Desktop\Балкия\Irina\bin\Debug\EntityFramework.dll
+C:\Users\Nelli\Desktop\Балкия\Irina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nelli\Desktop\Балкия\Irina\bin\Debug\EntityFramework.xml
+C:\Users\Nelli\Desktop\Балкия\Irina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nelli\Desktop\Балкия\Irina\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Irina.Form1.resources
+C:\Users\Nelli\Desktop\Балкия\Irina\obj\Debug\Balkia.csproj.CopyComplete

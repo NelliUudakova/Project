@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BalkiaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Participants">
+    <Key>
+      <PropertyRef Name="ParticipantsID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Email" />
+      <PropertyRef Name="StartDate" />
+      <PropertyRef Name="MonthlyRent" />
+      <PropertyRef Name="LegalEntity" />
+      <PropertyRef Name="IndividualEntrepreneur" />
+    </Key>
+    <Property Name="ParticipantsID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="MonthlyRent" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="LegalEntity" Type="Boolean" Nullable="false" />
+    <Property Name="IndividualEntrepreneur" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="ProjectID" />
+      <PropertyRef Name="ProjectName" />
+      <PropertyRef Name="ProjectDescription" />
+      <PropertyRef Name="ProjectStatus" />
+      <PropertyRef Name="ProjectBudget" />
+    </Key>
+    <Property Name="ProjectID" Type="Int32" Nullable="false" />
+    <Property Name="ProjectName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProjectDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProjectStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProjectBudget" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectsTeams">
+    <Key>
+      <PropertyRef Name="TeamID" />
+      <PropertyRef Name="TeamName" />
+      <PropertyRef Name="TeamMembers" />
+    </Key>
+    <Property Name="TeamID" Type="Int32" Nullable="false" />
+    <Property Name="TeamName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TeamMembers" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Time">
+    <Key>
+      <PropertyRef Name="TimeID" />
+      <PropertyRef Name="StartDate" />
+      <PropertyRef Name="EndDate" />
+    </Key>
+    <Property Name="TimeID" Type="Int32" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Login" />
+      <PropertyRef Name="Password" />
+    </Key>
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="BalkiaEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Participants" EntityType="Self.Participants" />
+    <EntitySet Name="Project" EntityType="Self.Project" />
+    <EntitySet Name="ProjectsTeams" EntityType="Self.ProjectsTeams" />
+    <EntitySet Name="Time" EntityType="Self.Time" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+  </EntityContainer>
+</Schema>

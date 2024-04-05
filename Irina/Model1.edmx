@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище BalkiaModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6013: Первичный ключ в таблице или представлении "Balkia.dbo.Budgets" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+        <EntityType Name="Budgets">
+          <Property Name="BudgetID" Type="int" />
+          <Property Name="TotalBudget" Type="money" />
+          <Property Name="SpentBudget" Type="money" />
+          <Property Name="RemainingBudget" Type="money" />
+        </EntityType>-->
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Balkia.dbo.Participants" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+        <EntityType Name="Participants">
+          <Key>
+            <PropertyRef Name="ParticipantsID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Email" />
+            <PropertyRef Name="StartDate" />
+            <PropertyRef Name="MonthlyRent" />
+            <PropertyRef Name="LegalEntity" />
+            <PropertyRef Name="IndividualEntrepreneur" />
+          </Key>
+          <Property Name="ParticipantsID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="StartDate" Type="date" Nullable="false" />
+          <Property Name="MonthlyRent" Type="money" Nullable="false" />
+          <Property Name="LegalEntity" Type="bit" Nullable="false" />
+          <Property Name="IndividualEntrepreneur" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Balkia.dbo.Project" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+        <EntityType Name="Project">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+            <PropertyRef Name="ProjectName" />
+            <PropertyRef Name="ProjectDescription" />
+            <PropertyRef Name="ProjectStatus" />
+            <PropertyRef Name="ProjectBudget" />
+          </Key>
+          <Property Name="ProjectID" Type="int" Nullable="false" />
+          <Property Name="ProjectName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ProjectDescription" Type="varchar(max)" Nullable="false" />
+          <Property Name="ProjectStatus" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ProjectBudget" Type="money" Nullable="false" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Balkia.dbo.ProjectsTeams" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+        <EntityType Name="ProjectsTeams">
+          <Key>
+            <PropertyRef Name="TeamID" />
+            <PropertyRef Name="TeamName" />
+            <PropertyRef Name="TeamMembers" />
+          </Key>
+          <Property Name="TeamID" Type="int" Nullable="false" />
+          <Property Name="TeamName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="TeamMembers" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Balkia.dbo.Time" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+        <EntityType Name="Time">
+          <Key>
+            <PropertyRef Name="TimeID" />
+            <PropertyRef Name="StartDate" />
+            <PropertyRef Name="EndDate" />
+          </Key>
+          <Property Name="TimeID" Type="int" Nullable="false" />
+          <Property Name="StartDate" Type="date" Nullable="false" />
+          <Property Name="EndDate" Type="date" Nullable="false" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Balkia.dbo.Users" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Login" />
+            <PropertyRef Name="Password" />
+          </Key>
+          <Property Name="Login" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Хранилище BalkiaModelContainer">
+          <EntitySet Name="Participants" EntityType="Self.Participants" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Participants].[ParticipantsID] AS [ParticipantsID], 
+    [Participants].[Name] AS [Name], 
+    [Participants].[Email] AS [Email], 
+    [Participants].[StartDate] AS [StartDate], 
+    [Participants].[MonthlyRent] AS [MonthlyRent], 
+    [Participants].[LegalEntity] AS [LegalEntity], 
+    [Participants].[IndividualEntrepreneur] AS [IndividualEntrepreneur]
+    FROM [dbo].[Participants] AS [Participants]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Project" EntityType="Self.Project" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Project].[ProjectID] AS [ProjectID], 
+    [Project].[ProjectName] AS [ProjectName], 
+    [Project].[ProjectDescription] AS [ProjectDescription], 
+    [Project].[ProjectStatus] AS [ProjectStatus], 
+    [Project].[ProjectBudget] AS [ProjectBudget]
+    FROM [dbo].[Project] AS [Project]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="ProjectsTeams" EntityType="Self.ProjectsTeams" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [ProjectsTeams].[TeamID] AS [TeamID], 
+    [ProjectsTeams].[TeamName] AS [TeamName], 
+    [ProjectsTeams].[TeamMembers] AS [TeamMembers]
+    FROM [dbo].[ProjectsTeams] AS [ProjectsTeams]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Time" EntityType="Self.Time" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Time].[TimeID] AS [TimeID], 
+    [Time].[StartDate] AS [StartDate], 
+    [Time].[EndDate] AS [EndDate]
+    FROM [dbo].[Time] AS [Time]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Users" EntityType="Self.Users" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Users].[Login] AS [Login], 
+    [Users].[Password] AS [Password]
+    FROM [dbo].[Users] AS [Users]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BalkiaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Participants">
+          <Key>
+            <PropertyRef Name="ParticipantsID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Email" />
+            <PropertyRef Name="StartDate" />
+            <PropertyRef Name="MonthlyRent" />
+            <PropertyRef Name="LegalEntity" />
+            <PropertyRef Name="IndividualEntrepreneur" />
+          </Key>
+          <Property Name="ParticipantsID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="MonthlyRent" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="LegalEntity" Type="Boolean" Nullable="false" />
+          <Property Name="IndividualEntrepreneur" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Project">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+            <PropertyRef Name="ProjectName" />
+            <PropertyRef Name="ProjectDescription" />
+            <PropertyRef Name="ProjectStatus" />
+            <PropertyRef Name="ProjectBudget" />
+          </Key>
+          <Property Name="ProjectID" Type="Int32" Nullable="false" />
+          <Property Name="ProjectName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProjectDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProjectStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProjectBudget" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProjectsTeams">
+          <Key>
+            <PropertyRef Name="TeamID" />
+            <PropertyRef Name="TeamName" />
+            <PropertyRef Name="TeamMembers" />
+          </Key>
+          <Property Name="TeamID" Type="Int32" Nullable="false" />
+          <Property Name="TeamName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TeamMembers" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Time">
+          <Key>
+            <PropertyRef Name="TimeID" />
+            <PropertyRef Name="StartDate" />
+            <PropertyRef Name="EndDate" />
+          </Key>
+          <Property Name="TimeID" Type="Int32" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Login" />
+            <PropertyRef Name="Password" />
+          </Key>
+          <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="BalkiaEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Participants" EntityType="Self.Participants" />
+          <EntitySet Name="Project" EntityType="Self.Project" />
+          <EntitySet Name="ProjectsTeams" EntityType="Self.ProjectsTeams" />
+          <EntitySet Name="Time" EntityType="Self.Time" />
+          <EntitySet Name="Users" EntityType="Self.Users" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище BalkiaModelContainer" CdmEntityContainer="BalkiaEntities1">
+          <EntitySetMapping Name="Participants">
+            <EntityTypeMapping TypeName="BalkiaModel.Participants">
+              <MappingFragment StoreEntitySet="Participants">
+                <ScalarProperty Name="ParticipantsID" ColumnName="ParticipantsID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="MonthlyRent" ColumnName="MonthlyRent" />
+                <ScalarProperty Name="LegalEntity" ColumnName="LegalEntity" />
+                <ScalarProperty Name="IndividualEntrepreneur" ColumnName="IndividualEntrepreneur" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Project">
+            <EntityTypeMapping TypeName="BalkiaModel.Project">
+              <MappingFragment StoreEntitySet="Project">
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+                <ScalarProperty Name="ProjectDescription" ColumnName="ProjectDescription" />
+                <ScalarProperty Name="ProjectStatus" ColumnName="ProjectStatus" />
+                <ScalarProperty Name="ProjectBudget" ColumnName="ProjectBudget" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProjectsTeams">
+            <EntityTypeMapping TypeName="BalkiaModel.ProjectsTeams">
+              <MappingFragment StoreEntitySet="ProjectsTeams">
+                <ScalarProperty Name="TeamID" ColumnName="TeamID" />
+                <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+                <ScalarProperty Name="TeamMembers" ColumnName="TeamMembers" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Time">
+            <EntityTypeMapping TypeName="BalkiaModel.Time">
+              <MappingFragment StoreEntitySet="Time">
+                <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="BalkiaModel.Users">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balkia", "Irina\Balkia.csproj", "{28624CEB-9FB3-440C-AC5C-D860DAB655CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28624CEB-9FB3-440C-AC5C-D860DAB655CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28624CEB-9FB3-440C-AC5C-D860DAB655CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28624CEB-9FB3-440C-AC5C-D860DAB655CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28624CEB-9FB3-440C-AC5C-D860DAB655CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E520B850-08AA-45C8-9E80-043B9DCDDF3C}
+	EndGlobalSection
+EndGlobal

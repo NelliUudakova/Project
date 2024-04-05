@@ -1,0 +1,42 @@
+C:\Users\bolsh\source\repos\Irina\Irina\bin\Debug\Irina.exe.config
+C:\Users\bolsh\source\repos\Irina\Irina\bin\Debug\Irina.exe
+C:\Users\bolsh\source\repos\Irina\Irina\bin\Debug\Irina.pdb
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.csproj.AssemblyReference.cache
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.csproj.SuggestedBindingRedirects.cache
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.Properties.Resources.resources
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.csproj.GenerateResource.cache
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.csproj.CoreCompileInputs.cache
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.exe
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.pdb
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.Login.resources
+C:\Users\bolsh\source\repos\Irina\Irina\bin\Debug\EntityFramework.dll
+C:\Users\bolsh\source\repos\Irina\Irina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bolsh\source\repos\Irina\Irina\bin\Debug\EntityFramework.xml
+C:\Users\bolsh\source\repos\Irina\Irina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bolsh\source\repos\Irina\Irina\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.csproj.CopyComplete
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.Reg.resources
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.Menu.resources
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.Doc.resources
+C:\Users\bolsh\source\repos\Irina\Irina\obj\Debug\Irina.TypeDoc.resources
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\bin\Debug\Irina.exe.config
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\bin\Debug\Irina.exe
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\bin\Debug\Irina.pdb
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.Doc.resources
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.Login.resources
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.Menu.resources
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.Properties.Resources.resources
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.Reg.resources
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.csproj.CopyComplete
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.exe
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.pdb
+C:\Users\User\Desktop\Отчет Цымбровская\Irina\Irina\obj\Debug\Irina.TypeDoc.resources
